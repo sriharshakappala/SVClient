@@ -39,15 +39,13 @@ class SVProperties
   end
 
   def update(src)
-    binding.pry
-    src.parameters.each { |key, value|
+    src.each { |key, value|
       setvalue(key, value)
     }
   end
 
   public
   def initialize(src = nil)
-    binding.pry
     @parameters = Hash.new
     setvalue(@@CONNECTION_TIMEOUT, @@DEFAULT_CONNECTION_TIMEOUT)
     setvalue(@@TRANSACTION_TIMEOUT, @@DEFAULT_CONNECTION_TIMEOUT)
