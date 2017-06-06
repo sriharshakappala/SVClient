@@ -4,7 +4,7 @@
 # @author Nityananda
 #
 
-require 'pry' 
+require 'pry'
 
 require_relative './SVUtils'
 require_relative './SVClient'

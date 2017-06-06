@@ -29,7 +29,6 @@ class SVClient
     else
       return SVStatus::UNSUPPORTED_TYPE_ERROR
     end
-
     @svresponse = @svrequest.execute()
     @retval = @svresponse.geterrorcode()
     if (@retval != SVStatus::SUCCESS.to_i)
